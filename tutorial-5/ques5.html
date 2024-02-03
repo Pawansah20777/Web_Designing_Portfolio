@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    //Autocomplete widget
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+
+  //tooltip widget
+  $( function() {
+    $( document ).tooltip();
+  } );
+  
+  //for button widget
+  $( function() {
+    $( ".widget input[type=submit], .widget a, .widget button" ).button();
+    $( "button, input, a" ).on( "click", function( event ) {
+      event.preventDefault();
+    } );
+  } );
+
+  </script>
+   <style>
+    label {
+      display: inline-block;
+      width: 5em;
+    }
+    </style>
+</head>
+<body>
+<h2>Autocomplete Widget</h2>
+<div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div>
+<br>
+<h2>Tooltip Widget</h2>
+  <p><label for="age">Address:</label><input id="age" title="We ask you to enter your address!"></p>
+<br>
+<div class="widget">
+  <h2>Widget Buttons</h2>
+    <button>A button element</button>
+    <input type="submit" value="A submit button">
+  <a href="#">An anchor</a>
+</div>
+</body>
+</html>

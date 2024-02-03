@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("button").click(function() {
+          var p = $("p").clone();
+          $("div").append(p);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <button>Copy Paragraph</button>
+    <br>
+    <br>
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		jQuery UI 
+	</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/jquery-1.12.4.js">
+	</script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js">
+	</script>
+	<style>
+		#tabs {
+			width: 1000px;
+			text-align: justify;
+		}
+	</style>
+
+	<script>
+		$(document).ready(function () {
+			
+
+			$("#tabs").tabs();
+		});
+	</script>
+</head>
+
+	
+	
+<body>
+
+<br>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tabs-1">MERN Technology</a></li>
+			<li><a href="#tabs-2">Data Science</a></li>
+			<li><a href="#tabs-3">Server Side Scripting Language</a></li>
+		</ul>
+
+		<div id="tabs-1">
+			
+			<ul>
+                <li>MongoDb-document database</li>
+                <li>Express(.js)-Node.js web framwork</li>
+                <li>React(.js)-a client-side Javascript framework</li>
+                <li>Node(.js)-the premier Javascript web server</li>
+             </ul>
+		</div>
+
+		<div id="tabs-2">
+			<ul>
+                <li>Python</li>
+                <li>SQL (Structured Query Language)</li>
+                <li>R</li>
+                <li>Julia </li>
+             </ul>
+		</div>
+
+		<div id="tabs-3">
+			<ul>
+				<li>PHP</li>
+				<li>Node.js</li>
+				<li>Python</li>
+				<li>Ruby </li>
+			 </ul>
+		</div>
+
+	</div>
+</body>
+
+</html>

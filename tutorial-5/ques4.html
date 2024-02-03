@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#menu" ).menu();
+  } );
+  </script>
+  <style>
+  .ui-menu { width: 150px; }
+  </style>
+</head>
+<body>
+ 
+<ul id="menu">
+  <li class="ui-state-disabled"><div>Computer Engineering</div></li>
+  <li><div>Semester-01</div>
+    <ul>
+      <li class="ui-state-disabled"><div>Applied science</div></li>
+      <li><div>FEE</div></li>
+      <li><div>ESL</div></li>
+      <li><div>Calculus</div></li>
+    </ul>
+  </li>
+  <li><div>Semester-02</div>
+    <ul>
+      <li><div>VCLA</div></li>
+      <li><div>Environment</div></li>
+      <li><div>Basic electronis</div></li>
+      <li><div>FCP</div></li>
+    </ul>
+  </li>
+  <li><div>Semester-03</div>
+    <ul>
+      <li><div>Python -I </div>
+      <ul>
+        <li><div>Python Intro</div></li>
+        <li><div>Data types</div></li>
+        <li><div>Class & Objects</div></li>
+      </ul>
+    </li>
+    <li><div>Differential eqn</div>
+    <ul>
+      <li><div>Higher order</div></li>
+      <li><div>Partial</div></li>
+      <li><div>Laplace</div></li>
+    </ul></li>
+    <li><div>DBMS</div></li>
+    <li><div>DCD</div></li>
+    </ul>
+    </li>
+      <li><div>Semester-04</div>
+        <ul>
+          <li><div>Java</div></li>
+          <li><div>OS</div></li>
+          <li><div>Web Programming</div></li>
+          <li><div>DCN</div></li>
+          <li><div>NEN</div></li>
+        </ul>
+      </li>
+  <li class="ui-state-disabled"><div>Other Semesters</div></li>
+</ul>
+</body>
+</html>
